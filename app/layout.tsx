@@ -1,12 +1,10 @@
-import { CustomLocalizationProvider } from "@/providers/localizationProvider";
 import React from "react";
 import { Toaster } from "react-hot-toast";
 import { NextAuthProvider } from "../providers/sessionProvider";
 import "./globals.css";
 
 export const metadata = {
-  title: "Sakura Bike",
-  description: "By Exodia",
+  title: "Lab BK",
 };
 
 export default function RootLayout({
@@ -18,15 +16,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NextAuthProvider>
-          <CustomLocalizationProvider>
-            <Toaster
-              position="bottom-right"
-              toastOptions={{
-                duration: 3000,
-              }}
-            />
-            {children}
-          </CustomLocalizationProvider>
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              duration: 3000,
+            }}
+          />
+          {children}
         </NextAuthProvider>
       </body>
     </html>

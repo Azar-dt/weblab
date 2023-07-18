@@ -1,7 +1,14 @@
 "use client";
 
+import Layout from "@/components/Layout";
+import Box from "@mui/material/Box";
+
 export default function Home() {
   return (
-      <h1>Home</h1>
+    <Layout>
+      <Box>
+        <h1>Home Page</h1>
+      </Box>
+    </Layout>
   );
 }

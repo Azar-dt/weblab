@@ -33,7 +33,6 @@ module.exports = {
     "prettier",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
-    "plugin:sonarjs/recommended",
     "plugin:security/recommended",
     "plugin:react-hooks/recommended",
   ],
@@ -83,7 +82,7 @@ module.exports = {
     "max-len": [
       "error",
       {
-        code: 80,
+        code: 120,
         tabWidth: 2,
       },
     ],
